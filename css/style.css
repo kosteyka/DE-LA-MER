@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 21px;
+}
+body{
+  min-height: 100vh;
 }
 nav {
   position: fixed;
-  height: 7vh;
+  top: 0;
+  left: 0;
+  height: 50px;
   width: 100%;
   background-color:#009432;
   background-image: linear-gradient(to bottom right,#C4E538,#FFC312);
@@ -16,7 +21,7 @@ nav {
   justify-content: space-around;
 }
 nav button {
-  margin: 10px 0;
+  margin: 5px 0 0 0;
   height: 40px;
   width: 150px;
   border: none;
@@ -35,27 +40,29 @@ nav button:hover {
   transition-timing-function: ease-out;
   background-position: right;
 }
-nav span {
-  margin: 15px 0;
-  display: block;
+.logo {
+  line-height: 50px;
+  font-size: 36px;
 }
 nav span a {
-  border: 1px solid black;
-  border-radius:50px;
-  display: inline-block;
-  width: 100px;
-  line-height: 30px;
-  text-align: center;
-  text-decoration: none;
+  line-height: 50px;
+  font-size: 18px;
 }
-#selected-language {
-  background-color: black;
-  color: white;
-  box-shadow: 5px 10px 11px -7px #000000;
+nav span a:hover {
+  color: black;
 }
-nav span a:hover{
-  color: red;
+.body-element {
+  margin: 50px 0 0 0;
 }
-nav img {
-  margin: 10px 0;
+.greeting {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-align: left;
+}
+.greeting p {
+  font-size: 36px;
+}
+footer {
+  display: none;
 }
